@@ -1,13 +1,24 @@
 body {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Hero Section */
 .hero-section {
   background-image: url('/Gambar/aerial-view-container-cargo-ship-sea.jpg');
   background-size: cover;
   background-position: center;
   color: white;
   padding: 14.5% 0;
+  text-align: center;
+}
+
+.hero-section .container {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 50px;
+  border-radius: 20px;
 }
 
 .animated-text {
@@ -23,7 +34,7 @@ body {
   }
 }
 
-/* Solusi pengiriman cepat */
+/* Landing Page */
 .landing-page {
   padding: 30px 0;
   background-color: #0c2d57;
@@ -47,17 +58,11 @@ body {
   font-weight: bold;
 }
 
-.hero-section .container {
-  background: rgba(0, 0, 0, 0.4);
-  padding: 70px;
-  border-radius: 30px;
-}
-
 .imgbordercustom {
   border: 7px solid white;
 }
 
-/* feature section */
+/* Feature Section */
 .features-section {
   padding: 20px 0;
 }
@@ -68,19 +73,12 @@ body {
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .feature-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.feature-card img {
-  transition: transform 0.3s ease;
-}
-
-.feature-card:hover img {
-  transform: scale(1.1);
 }
 
 .feature-title {
@@ -95,13 +93,7 @@ body {
   margin-top: 10px;
 }
 
-@media (max-width: 768px) {
-  .feature-card {
-    margin-bottom: 30px;
-  }
-}
-
-/* layanan kami */
+/* Service Section */
 .service-card {
   border: 1px solid #d3d3d3;
   border-radius: 8px;
@@ -114,14 +106,6 @@ body {
 .service-card:hover {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   transform: translateY(-10px);
-}
-
-.service-card img {
-  transition: transform 0.3s ease;
-}
-
-.service-card:hover img {
-  transform: scale(1.1);
 }
 
 .service-title {
@@ -143,7 +127,6 @@ body {
 }
 
 .read-more:hover {
-  /* text-decoration: underline; */
   font-weight: bolder;
 }
 
@@ -155,7 +138,9 @@ body {
   border-radius: 10px;
   padding: 20px;
   margin: 15px;
+  text-align: center;
 }
+
 .testimonial-card img {
   width: 50px;
   height: 50px;
@@ -163,9 +148,52 @@ body {
   background-color: #003366;
   padding: 10px;
 }
+
 .testimonial-card h6 {
   color: #ff6f00;
 }
+
 .testimonial-card small {
   color: gray;
+}
+
+/* Responsiveness */
+@media (max-width: 991px) {
+  .hero-section {
+    padding: 10% 0;
+  }
+
+  .hero-section .container {
+    padding: 30px;
+  }
+
+  .feature-card,
+  .service-card,
+  .testimonial-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 8% 0;
+  }
+
+  .hero-section .container {
+    padding: 20px;
+  }
+
+  .content-wrapper {
+    margin-top: 15%;
+  }
+
+  .feature-title,
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .feature-description,
+  .service-desc {
+    font-size: 0.9rem;
+  }
 }
