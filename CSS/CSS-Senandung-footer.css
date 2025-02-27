@@ -1,0 +1,22 @@
+.bgnavy {
+  background-color: #fc6736;
+}
+
+.bg {
+  background-color: #0c2d57;
+}
+
+.footer-divider {
+  background-color: #fc6736;
+  margin-top: 1rem;
+}
+
+.service a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.service a:hover {
+  color: #ff7f32; /* Warna oranye */
+  text-decoration: none;
+}

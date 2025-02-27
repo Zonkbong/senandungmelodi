@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT. Senandung Melodi Sejahtera</title>
+    <link rel="icon" href="/Gambar/Logo/LogoSenandung.png" type="image/x-icon" />
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/CSS-Senandung-Home.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/4d6b30cb21.js" crossorigin="anonymous"></script>
+
+    <!-- Include Navbar HTML -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        fetch('navbar.html')
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById('navbar-container').innerHTML = data;
+          });
+      });
+    </script>
+
+    <!-- Include footer HTML -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        fetch('footer.html')
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById('footer-container').innerHTML = data;
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navbar Container -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+      <div class="container">
+        <h1 class="display-3 fw-bold">PT. SENANDUNG MELODI SEJAHTERA</h1>
+        <h3 class="fw-semibold fs-2">Solusi Layanan Impor Terpercaya ke Indonesia</h3>
+        <a href="#" class="btn btn-primary mt-4 btn-lg fw-semibold">Lihat Layanan &raquo;</a>
+      </div>
+    </section>
+    <br />
+    <section class="features-section">
+      <h1 class="text-center mb-5 fw-bold fs-1">Komitmen Pelayanan Kami</h1>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-4">
+            <div class="feature-card">
+              <img src="/Gambar/icons/Asset 2.png" alt="Global Network Icon" height="170" />
+              <br />
+              <h5 class="feature-title"><strong>Agen Impor Tersebar di Seluruh Asia</strong></h5>
+              <p class="feature-description">Impor barang dengan efisien dari berbagai negara.</p>
+              <br />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="feature-card">
+              <br />
+              <img src="/Gambar/icons/Asset 1.png" alt="Domestic Shipping Icon" height="145" />
+              <br />
+              <h5 class="feature-title"><strong>Pengiriman Ke Seluruh Indonesia</strong></h5>
+              <p class="feature-description">Pengiriman domestik dengan cepat dan harga kompetitif.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="feature-card">
+              <br />
+              <img src="/Gambar/icons/24-hours.png" alt="24/7 Support Icon" height="120" />
+              <br />
+              <br />
+              <h5 class="feature-title"><strong>Layanan Chat dan Konsultasi 24 jam</strong></h5>
+              <p class="feature-description">Customer service selalu siap menjawab pertanyaan Anda.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mb-4"></div>
+      </div>
+    </section>
+    <div class="container-fluid landing-page">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-6 ms-lg-5">
+          <img src="/Gambar/truk.png" alt="Truck Image" class="rounded-3 imgbordercustom" />
+        </div>
+        <div class="col-lg-5 text-section text-white ms-4">
+          <h2 class="highlight fw-bold">Solusi Pengiriman Cepat, Lancar dan Tepat Waktu</h2>
+          <p class="mb-lg-6 fw-normal fs-5">
+            <br />
+            Kami akan memastikan barang Anda sampai ke tujuan dengan selamat dan tepat waktu. Kami siap menjadi mitra logistik terpercaya bagi bisnis Anda.
+            <br />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <h1 class="text-center mb-5 fw-bold fs-1">Pelayanan Profesional Kami</h1>
+
+      <div class="row">
+        <!-- Air Freight Card -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="/Gambar/icons/Pesawat.png" class="mb-3" />
+            <div class="service-title fs-3">Air Freight</div>
+            <div class="service-desc">Air Freight atau import barang melalui udara sangat ideal untuk memenuhi kebutuhan mendesak dan butuh pemenuhan cepat.</div>
+            <a href="#" class="read-more">Selengkapnya</a>
+          </div>
+        </div>
+
+        <!-- Sea Freight Card -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="/Gambar/icons/Kapal.png" class="mb-3" />
+            <div class="service-title fs-3">Sea Freight</div>
+            <div class="service-desc">Sea Freight atau pengiriman barang melalui laut sangat ideal untuk barang berkapasitas besar dan biaya yang lebih murah.</div>
+            <a href="#" class="read-more">Selengkapnya</a>
+          </div>
+        </div>
+
+        <!-- Door to Door Card -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="/Gambar/icons/Truck.png" class="mb-3" />
+            <div class="service-title fs-3">Door to Door</div>
+            <div class="service-desc">Layanan Door to Door yaitu layanan pengiriman barang dengan sistem EX WORKS, FOB, CNF, CIF, dari seluruh negara sampai ke alamat penerima.</div>
+            <a href="#" class="read-more">Selengkapnya</a>
+          </div>
+        </div>
+        <div class="pb-5"></div>
+      </div>
+    </div>
+    <div class="container-fluid landing-page">
+      <div class="row align-items-center">
+        <h1 class="text-center fw-bold mb-lg-3 mt-lg-3 text-white">Bukti Kepercayaan Pelanggan</h1>
+      </div>
+      <div class="container py-3 mt-3">
+        <div class="owl-carousel owl-theme">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card text-center">
+            <p class="mt-3">
+              Terima kasih kepada PT. Senandung Melodi Sejahtera atas pelayanan yang cepat dan memuaskan. Berkat dukungan mereka, kini usaha saya memiliki beragam pilihan kain dan omset semakin bertambah. Layanan luar biasa!
+            </p>
+            <br />
+            <h6>Richard Ardiyanto</h6>
+            <small>CV. MAKMUR SENTOSA ABADI</small>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card text-center">
+            <p class="mt-3">Selama bekerja sama dengan PT. Senandung Melodi Sejahtera, usaha bengkel sparepart motor dan mobil saya jadi lebih berkembang karena ketersediaan yang lengkap! Harganya juara dan Pas di Kantong pengusaha!!!</p>
+            <br />
+            <h6>Laurentius Dwi Adhie Yoso</h6>
+            <small>CV. RAPTORS AKSESORIS</small>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card text-center">
+            <p class="mt-3">
+              Pengalaman saya menggunakan jasa dari PT. Senandung Melodi Sejahtera sangat memuaskan, karena proses pengiriman barangnya cepat dan barang yang dikirimkan selalu aman serta terbungkus dengan rapi! Waktu Pengiriman Cepat!
+            </p>
+            <h6>William Poetra Yoga</h6>
+            <small>CV. MESIN NGEBUT CANGGIH</small>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-card text-center">
+            <p class="mt-3">Dengan PT. Senandung Melodi Sejahtera sangat membantu saya dalam mengimpor kebutuhan barang - barang bangunan sehingga ketersediaannya lengkap, bikin usaha saya makin berkembang dan maju.</p>
+            <br />
+            <h6>Jemmy Nahawi</h6>
+            <small>PT. MEGA JAYA SENTOSA</small>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="testimonial-card text-center">
+            <p class="mt-3">Berkat PT. Senandung Melodi Sejahtera, impor barang dari luar negeri jadi lebih mudah dan lancar. Saya sangat senang dengan kinerja yang cepat dan tepat dalam setiap proses - proses dokumennya</p>
+            <br />
+            <h6>Ridwanto</h6>
+            <small>CV. SINAR MAS DIESEL</small>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div class="testimonial-card text-center">
+            <p class="mt-3">
+              Tidak ada alasan lagi nggak pilih PT. Senandung Melodi Sejahtera sebagai partner bisnis untuk jasa impor barang. Harganya murah tapi sangat professional dalam menanggani setiap proses pengiriman sampai urusan bea cukai
+            </p>
+            <br />
+            <h6>Burhanuddin Ali</h6>
+            <small>PT. BINA CAKRA APINDO</small>
+          </div>
+
+          <!-- Testimonial 7 -->
+          <div class="testimonial-card text-center">
+            <p class="mt-3">Menggunakan jasa PT. Senandung Melodi Sejahtera benar-benar membuat saya tenang. Proses import barang dari China berjalan mulus tanpa ada kendala. Tim mereka sangat kooperatif dan ramah.</p>
+            <br />
+            <h6>Marwin</h6>
+            <small>PT. IKIGAI INTERNASIONAL INDONESIA</small>
+          </div>
+
+          <!-- Testimonial 8 -->
+          <div class="testimonial-card text-center">
+            <p class="mt-3">Layanan PT. Senandung Melodi Sejahtera luar biasa! Mereka sangat teliti dalam mengurus semua prosedur impor, dan komunikasi mereka pun sangat baik. Kami pasti akan terus bekerja sama dengan mereka.</p>
+            <br />
+            <h6>Panaha Djamalin</h6>
+            <small>PT. MITRA MANGGALA SEJAHTERA</small>
+          </div>
+
+          <!-- Testimonial 9 -->
+          <div class="testimonial-card text-center">
+            <p class="mt-3">
+              PT. Senandung Melodi Sejahtera memberikan layanan import yang efisien dan dapat diandalkan. Mereka menangani semua dokumen dengan sangat profesional, dan saya tidak perlu khawatir mengenai pajak atau bea cukai.
+            </p>
+            <br />
+            <h6>Jap Fandy</h6>
+            <small>PT. SCHLIEPER INDAH INDONESIA</small>
+          </div>
+
+          <!-- Testimonial 10 -->
+          <div class="testimonial-card text-center">
+            <p class="mt-3">
+              Saya sangat puas dengan layanan import dari PT. Senandung Melodi Sejahtera. Mereka sangat cepat dalam merespons dan menyelesaikan masalah jika ada kendala. Saya sangat merekomendasikan jasa mereka untuk urusan impor.
+            </p>
+            <h6>Henfrans Morrisen</h6>
+            <small>CV. RAJAWALINDO MACHINERY</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- AOS Animated -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const CardPelayanan = document.querySelectorAll('.feature-card');
+
+      CardPelayanan.forEach((card, i) => {
+        card.dataset.aos = 'zoom-in-down';
+        card.dataset.aosDelay = i * 500;
+        card.dataset.aosDuration = 800;
+      });
+
+      AOS.init();
+
+      const CardService = document.querySelectorAll('.service-card');
+
+      CardService.forEach((card, i) => {
+        card.dataset.aos = 'zoom-in-down';
+        card.dataset.aosDelay = i * 500;
+        card.dataset.aosDuration = 800;
+      });
+
+      AOS.init();
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const texts = ['Solusi Layanan Impor Terpercaya ke Indonesia', 'Pengiriman Cepat dan Aman', 'Bersama Kami, Impor Jadi Lebih Mudah'];
+
+        const textElement = document.getElementById('changing-text');
+        let index = 0;
+
+        function changeText() {
+          // Animasi keluar
+          gsap.to(textElement, {
+            opacity: 0,
+            duration: 1,
+            onComplete: () => {
+              // Ubah teks setelah animasi keluar selesai
+              index = (index + 1) % texts.length;
+              textElement.textContent = texts[index];
+
+              // Animasi masuk
+              gsap.to(textElement, { opacity: 1, duration: 1 });
+            },
+          });
+        }
+
+        // Jalankan animasi setiap 3 detik
+        setInterval(changeText, 3000);
+      });
+    </script>
+    <!-- Owl Carousel -->
+    <script>
+      $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: false,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 3,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+.hero-sectionn {
+  background-image: url('/Gambar/transport-logistics-products.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Pastikan elemen ini memiliki posisi relatif */
+  height: 230px; /* Sesuaikan dengan tinggi gambar */
+}
+
+.highlight {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute; /* Membuat elemen ini mencakup seluruh induknya */
+  top: -20;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.colorbold {
+  color: #103a71;
+}
+
+.text-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image-container {
+  text-align: center;
+}
+.image-container img {
+  width: 35%; /* Atur ukuran gambar sesuai kebutuhan */
+}
+
+.image-container {
+  text-align: center;
+}
+.service-points {
+  /* margin-top: 20px; */
+  display: flex;
+  justify-content: center;
+}
+.service-points div {
+  padding: 0 15px;
+}
+.service-points ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+}
+.service-points li {
+  margin-bottom: 10px;
+}
+
+.image-gallery {
+  position: relative;
+  max-width: 75%;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+}
+.image-gallery img {
+  width: 120%;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.image-gallery img.active {
+  opacity: 1;
+  position: relative;
+}
+
+.vision-mission h3 {
+  color: #ff5722;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.vision-mission p {
+  line-height: 1.6;
+}
+
+.subjdl {
+  color: #ff5722;
+}
+
+.vision-item {
+  display: flex;
+  align-items: baseline;
+}
+
+.vision-item i {
+  margin-right: 20px; /* Atur jarak antara ikon dan teks */
+  color: #103a71;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 50, 0.6), rgba(0, 0, 50, 0.5)), url('/Gambar/aerial-view-container-cargo-ship-sea.jpg') center/cover no-repeat;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+}

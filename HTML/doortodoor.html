@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT. Senandung Melodi Sejahtera</title>
+    <link rel="icon" href="/Gambar/Logo/LogoSenandung.png" type="image/x-icon" />
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/CSS-Senandung-doortodoor.css" />
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/4d6b30cb21.js" crossorigin="anonymous"></script>
+
+    <!-- Include Navbar HTML -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        fetch('navbar.html')
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById('navbar-container').innerHTML = data;
+          });
+      });
+    </script>
+
+    <!-- Include footer HTML -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        fetch('footer.html')
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById('footer-container').innerHTML = data;
+          });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navbar Container -->
+    <div id="navbar-container"></div>
+
+    <div class="hero-sectionn mt-5">
+      <div class="container-fluid highlight">
+        <div class="row justify-content-center">
+          <div class="col-md-7 text-center text-white">
+            <h1 class="display-5 mb-2 mt-5 fw-bold">Door To Door</h1>
+            <p class="lead mb-4 mt-4 fs-5 pb-2 fw-normal">Opsi terbaik untuk kebutuhan barang berkapasitas besar dengan biaya yang murah</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <div class="text-container">
+        <p class="mt-5 pt-5 fs-5 mb-5 pb-5">
+          Layanan <i>door-to-door</i> dari PT. Senandung Melodi Sejahtera adalah solusi pengiriman barang dari luar negeri yang menawarkan kemudahan dan efisiensi bagi pengirim maupun penerima. Barang akan dijemput langsung dari lokasi yang
+          ditentukan, seperti gudang pabrik, tempat tinggal, atau alamat bisnis, tanpa perlu pengirim mengantarkannya ke pihak freight forwarder. Setelah itu, barang akan diantarkan langsung ke tujuan akhir di Indonesia. Dengan layanan ini,
+          pengirim hanya perlu membayar biaya pengiriman dan menunggu barang tiba, sementara seluruh proses pengangkutan, pengurusan dokumen ekspor-impor, hingga bea cukai dikelola oleh perusahaan forwarding yang bertindak sebagai pihak
+          ketiga. Solusi ini tidak hanya menghemat waktu dan tenaga, tetapi juga memastikan barang sampai dengan aman dan sesuai jadwal.
+        </p>
+      </div>
+    </div>
+
+    <section class="hero-section my-2">
+      <h1 class="animated-text display-6 fw-bold">
+        Butuh jasa import dengan pelayanan profesional dan <br />
+        harga terjangkau?
+      </h1>
+      <a href="kontak.html" class="btn btn-primary mt-4 btn-lg fw-semibold">Hubungi Kami &raquo;</a>
+    </section>
+
+    <script>
+      // JavaScript to add animation effect
+      document.addEventListener('DOMContentLoaded', function () {
+        const animatedElements = document.querySelectorAll('.animated-text');
+        setTimeout(() => {
+          animatedElements.forEach((el, index) => {
+            setTimeout(() => {
+              el.classList.add('visible');
+            }, index * 300); // Delay between each element's animation
+          });
+        }, 500); // Initial delay before animation starts
+      });
+
+      const images = [document.getElementById('image1'), document.getElementById('image2')];
+      let currentImageIndex = 0;
+
+      setInterval(() => {
+        // Remove 'active' class from the current image
+        images[currentImageIndex].classList.remove('active');
+
+        // Move to the next image index
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+
+        // Add 'active' class to the new image
+        images[currentImageIndex].classList.add('active');
+      }, 5000); // 5000 ms = 5 seconds
+    </script>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+  </body>
+</html>
