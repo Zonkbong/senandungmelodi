@@ -19,7 +19,7 @@
     <!-- Include Navbar HTML -->
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        fetch('navbar.html')
+        fetch('/HTML/navbar.html')
           .then((response) => response.text())
           .then((data) => {
             document.getElementById('navbar-container').innerHTML = data;
@@ -30,7 +30,7 @@
     <!-- Include footer HTML -->
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        fetch('footer.html')
+        fetch('/HTML/footer.html')
           .then((response) => response.text())
           .then((data) => {
             document.getElementById('footer-container').innerHTML = data;
